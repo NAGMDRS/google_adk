@@ -31,7 +31,7 @@ google_adk/
 
 A pipeline for generating, reviewing, and refactoring code. It integrates research capabilities with a sequential code generation process.
 
-**Location:** `agent/agent.py:120-124`
+**Location:** [agent.py:120-124](https://github.com/NAGMDRS/google_adk/blob/main/agent/agent.py#L120-L124)
 
 #### Architecture
 
@@ -39,35 +39,35 @@ The Code Pipeline Agent includes multiple specialized sub-agents:
 
 - **Prompt Writer Agent**:  
   Creates prompts for code generation based on user requirements  
-  `agent.py:4-12`
+  [agent.py:4-12](https://github.com/NAGMDRS/google_adk/blob/main/agent/agent.py#L4-L12)
 
 - **Code Writer Agent**:  
   Generates initial Python code based on the prompt  
-  `agent.py:14-26`
+  [agent.py:14-26](https://github.com/NAGMDRS/google_adk/blob/main/agent/agent.py#L14-L26)
 
 - **Code Reviewer Agent**:  
   Reviews generated code for correctness, readability, efficiency, and best practices  
-  `agent.py:29-54`
+  [agent.py:29-54](https://github.com/NAGMDRS/google_adk/blob/main/agent/agent.py#L29-L54)
 
 - **Code Refactorer Agent**:  
   Refactors code based on review comments  
-  `agent.py:57-82`
+  [agent.py:57-82](https://github.com/NAGMDRS/google_adk/blob/main/agent/agent.py#L57-L82)
 
 - **Sequential Agent**:  
   Orchestrates the sequential execution of the above agents  
-  `agent.py:84-89`
+  [agent.py:84-89](https://github.com/NAGMDRS/google_adk/blob/main/agent/agent.py#L84-L89)
 
 - **Researcher Agent**:  
   Performs research using Google Search  
-  `agent.py:91-102`
+  [agent.py:91-102](https://github.com/NAGMDRS/google_adk/blob/main/agent/agent.py#L91-L102)
 
 - **Parallel Research Agent**:  
   Runs research and code generation in parallel  
-  `agent.py:104-108`
+  [agent.py:104-108](https://github.com/NAGMDRS/google_adk/blob/main/agent/agent.py#L104-L108)
 
 - **Merger Agent**:  
   Combines research and code into a final output  
-  `agent.py:110-119`
+  [agent.py:110-119](https://github.com/NAGMDRS/google_adk/blob/main/agent/agent.py#L110-L119)
 
 #### Workflow
 
@@ -88,7 +88,7 @@ The Code Pipeline Agent includes multiple specialized sub-agents:
 
 The ResearcherAgent searches and summarizes academic papers from ArXiv, helping users quickly gather relevant research insights.
 
-**Location:** `researchAgent/agent.py:10-22`
+**Location:** [researchAgent/agent.py:10-22](https://github.com/NAGMDRS/google_adk/blob/main/researchAgent/agent.py#L10-L22)
 
 #### Architecture
 
@@ -101,7 +101,7 @@ The ResearcherAgent searches and summarizes academic papers from ArXiv, helping 
   - `load_memory`: Accesses previously saved results
 
 The agent runs using a `Runner` with in-memory session and memory services.  
-`agent.py:24-32`
+[agent.py:24-32](https://github.com/NAGMDRS/google_adk/blob/main/researchAgent/agent.py#L24-L32)
 
 #### Workflow
 
@@ -120,11 +120,11 @@ Shared tools are available in the `helperFiles` directory:
 
 - **ArXiv Search Tool**:  
   Searches for academic papers on ArXiv based on a query  
-  `tools.py:5-71`
+  [tools.py:5-71](https://github.com/NAGMDRS/google_adk/blob/main/helperFiles/tools.py#L5-L71)
 
 - **Summarization Agent Tool**:  
   Summarizes text using a dedicated agent  
-  `tools.py:73-80`
+  [tools.py:73-80](https://github.com/NAGMDRS/google_adk/blob/main/helperFiles/tools.py#L73-L80)
 
 ---
 
