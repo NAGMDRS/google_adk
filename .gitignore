@@ -1,8 +1,14 @@
 .idea
 .venv
+
 agent/.env
 researchAgent/.env
+callbackAgents/.env
+
 agent/__pycache__/
 researchAgent/__pycache__/
 helperFiles/__pycache__/
+callbackAgents/__pycache__/
+
 helperFiles/placeholderAgent.py
+dataScienceAgent/

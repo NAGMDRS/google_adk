@@ -77,4 +77,4 @@ summary_agent = Agent(
     description="Agent to summarize text",
 )
 
-summerizing_AgentTool = AgentTool(summary_agent)
+summerising_AgentTool = AgentTool(summary_agent)
